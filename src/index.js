@@ -16,8 +16,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element = {<Home/>}/>
-          <Route path="/PictureOfTheDay" element = {<Picofday/>} />
-          <Route path="/SearchEngine" element = {<Search/>}/>
+          <Route path="PictureOfTheDay" element = {<Picofday/>} />
+          <Route path="SearchEngine" element = {<Search/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
