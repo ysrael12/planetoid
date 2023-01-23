@@ -15,7 +15,7 @@ export default class Search extends React.Component {
   }
 
   handleSubmit(event){
-    axios.get('https://images-api.nasa.gov/search?q='+this.state.value)
+    axios.get('https://images-api.nasa.gov/search?q='+this.state.value).then(response) => console.log(response.data)
   }
 
   render() {
