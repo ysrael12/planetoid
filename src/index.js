@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Picofday from './pages/Picofday';
 import Search from './pages/Search';
 import Layout from './elements/Layout';
-import Home from './elements/Home';
+import Home from './pages/Home';
 
 //routers 
 export default function App() {

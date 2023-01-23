@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import axios from 'axios';
+import '../index.css'
+
 
 export default class Search extends React.Component {
   constructor(props){
@@ -15,20 +16,28 @@ export default class Search extends React.Component {
   }
 
   handleSubmit(event){
-    axios.get('https://images-api.nasa.gov/search?q='+this.state.value).then((response) =>{
-      console.log(response.data);
-    }) 
+    let search = this.state.value;
+    console.log(`https://images-api.nasa.gov/search?q=${search}`);   
   }
+   
 
   render() {
+    this.props = this.state.value; 
+    console.log(this.props)
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          Nome:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
-        </label>
-        <input type="submit" value="Enviar" />
+    <div class="card grid text-center gap-3 search" >
+      <form action={`https://images.nasa.gov/search-results?q=${this.props}&page=1&media=image,video,audio&yearStart=1920&yearEnd=2023`} method='GET' onSubmit={this.handleSubmit}>
+        <div >
+          <div class="p-2 g-col-6">
+            <input type="text" class="form-control" placeholder="Search" ></input>
+          </div>
+          <div class="p-2 g-col-6">
+            <input type="submit" class="btn btn-dark" value='search'></input>
+          </div>
+        </div>
       </form>
+    </div>
+      
     );
   }
 }
