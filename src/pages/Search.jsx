@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import axios from 'axios';
 
-class Form extends React.Component {
+class Search extends React.Component {
   constructor(props){
     super(props);
     this.state = {value : ' '};
