@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import '../index.css'
-import axios from 'axios';
+
 
 
 export default class Search extends React.Component {
@@ -17,7 +17,8 @@ export default class Search extends React.Component {
   }
 
   handleSubmit(event){
-    let search = this.state.value;
+   let search = this.state.value;
+   console.log(search);
   }
 
   render()
