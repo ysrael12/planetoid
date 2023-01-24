@@ -21,10 +21,22 @@ background-size: 128px 74px;
   margin-top: 10px;
 }
 
+.box-text{
+  -webkit-box-shadow: 4px 3.5px 19.5px 7px #bf0f0f;
+  -moz-box-shadow: 4px 3.5px 19.5px 7px #bf0f0f;
+  box-shadow: 4px 3.5px 19.5px 7px #bf0f0f;
+  background: white;
+  margin-top: 7rem;
+}
+
 
 
 .search{
   width: 50rem;
   margin-top: 10rem;
   margin-left: 22rem;
+}
+
+.btn-space {
+  margin-right: 10px;
 }
