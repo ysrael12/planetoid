@@ -9,6 +9,7 @@ import Search from './pages/Search';
 import Layout from './elements/Layout';
 import Home from './pages/Home';
 
+
 //routers 
 export default function App() {
   return (

@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import '../index.css'
-
+import Results from './Results';
 
 
 export default class Search extends React.Component {
@@ -27,7 +27,7 @@ export default class Search extends React.Component {
    let search = this.state.value;
     return (
     <div className="card grid text-center mb-3 gap-3 search" >
-      <form  onChange={this.handleChange}  onSubmit={this.handleSubmit}>
+      <form onChange={this.handleChange}  onSubmit={this.handleSubmit}>
         <div >
           <div className="p-2 g-col-6">
             <input type="text" className="form-control" placeholder="Search" ></input>
@@ -37,7 +37,9 @@ export default class Search extends React.Component {
           </div>
         </div>
       </form>
+      <Results url={`https://images-api.nasa.gov/search?q=${search}`}/>
     </div>  
+    
     );
   }
 }
