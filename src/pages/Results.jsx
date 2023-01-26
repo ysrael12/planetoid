@@ -18,7 +18,7 @@ export default function Results (props){
 
       let flag = null ;
     if (!data){
-        flag = 'red';
+        flag = 'red🚩';
     }else{
         flag = 'green';
     }
