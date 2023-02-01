@@ -8,7 +8,7 @@ import Picofday from './pages/Picofday';
 import Search from './pages/Search';
 import Layout from './elements/Layout';
 import Home from './pages/Home';
-import Mars from './pages/Mars'
+// import Mars from './pages/Mars'
 
 //routers 
 export default function App() {
