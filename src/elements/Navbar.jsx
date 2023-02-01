@@ -17,8 +17,8 @@ function Menu(){
           <Nav className="me-auto">
             <Nav.Link href="PictureOfTheDay">Astronomy Picture of the Day</Nav.Link>
             <Nav.Link href="SearchEngine">Space Search Engine</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+            {/* <NavDropdown title="Images galery" id="basic-nav-dropdown">
+              <NavDropdown.Item href="MarsPhotos">Mars pictures</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
               </NavDropdown.Item>
@@ -27,7 +27,7 @@ function Menu(){
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

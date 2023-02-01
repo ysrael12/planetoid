@@ -8,7 +8,7 @@ import Picofday from './pages/Picofday';
 import Search from './pages/Search';
 import Layout from './elements/Layout';
 import Home from './pages/Home';
-
+import Mars from './pages/Mars'
 
 //routers 
 export default function App() {
@@ -19,6 +19,7 @@ export default function App() {
           <Route index element = {<Home/>}/>
           <Route path="PictureOfTheDay" element = {<Picofday/>} />
           <Route path="SearchEngine" element = {<Search/>}/>
+          {/* <Route path="MarsPhotos" element = {<Mars/>} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
