@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Card from 'react-bootstrap/Card';
 
 export default function Home() {
     //hire me off canvas
@@ -15,19 +16,24 @@ export default function Home() {
     
 
     return (
-        <div className='box-text container text-center bg-light text-dark'>
-            <h1 className='display-4 p-3'>Welcome to Planetoid</h1>
-            <p className="blockquote text-break p-3">
-            Hello and welcome to planetoid!! Planetoid is a web platform that connects you to space !!
-            I created this platform to be my web development portfolio, but it turned out so cool that I even put it in the clouds lol.
-            if you are here to see the photos and other tools that my site offers, enjoy it a lot!! If you are a recruiter... please hire me!!!
-            to know the frameworks and libraries that I used to develop this application click on the button that says: resources
-            if you want to contact me for hiring click on: hire me
-            </p>
-            <div className='container p-3'>
-                <button onClick={handleShowHire} type="button" class="btn btn-secondary btn-space">Hire me</button>
-                <button onClick={handleShowRsc} type="button" class="btn btn-secondary btn-space">Resources</button>
-            </div>
+        <div  className='box-text container text-center bg-light text-dark'>
+
+            <Card  className="text-center">
+                <Card.Header>Welcome to Planetoid</Card.Header>
+                    <Card.Body>
+                        <Card.Title>About me</Card.Title>
+                        <Card.Text>
+                        Hello and welcome to planetoid!! Planetoid is a web platform that connects you to space !!
+                        I created this platform to be my web development portfolio, but it turned out so cool that I even put it in the clouds lol.
+                        if you are here to see the photos and other tools that my site offers, enjoy it a lot!! If you are a recruiter... please hire me!!!
+                        to know the frameworks and libraries that I used to develop this application click on the button that says: resources
+                        if you want to contact me for hiring click on: hire me
+                        </Card.Text>
+                        <button onClick={handleShowHire} type="button" class="btn btn-secondary btn-space">Hire me</button>
+                        <button onClick={handleShowRsc} type="button" class="btn btn-secondary btn-space">Resources</button>
+                        </Card.Body>
+                        <Card.Footer className="text-muted">Ysrael Sacrati</Card.Footer>
+            </Card>
 
             <Offcanvas show={showHire} onHide={handleCloseHire}>
                 <Offcanvas.Header closeButton>

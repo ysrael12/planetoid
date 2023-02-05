@@ -21,7 +21,7 @@ function Picoftheday(){
       <div className='row'>
         
         <div className="col-20 col-lg-5 ">
-          <img src={data.url} alt={data.title} className='img-thumbnail img-fluid w-100 h-100' />
+          <img  src={data.url} alt={data.title} className='img-thumbnail img-fluid w-100 h-100' />
         </div>
 
         <div className='col p-5'>
