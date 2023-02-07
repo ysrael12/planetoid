@@ -16,7 +16,7 @@ export default function Home() {
     
 
     return (
-        <div  className='box-text container text-center bg-light text-dark'>
+        <div  className=' box-text container text-center bg-light text-dark'>
 
             <Card  className="text-center">
                 <Card.Header>Welcome to Planetoid</Card.Header>

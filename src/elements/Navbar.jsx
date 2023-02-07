@@ -13,7 +13,7 @@ function Menu(){
       <Container>
         <Navbar.Brand href="/" > Planetoid </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse  id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="PictureOfTheDay">Astronomy Picture of the Day</Nav.Link>
             <Nav.Link href="SearchEngine">Space Search Engine</Nav.Link>
